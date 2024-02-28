@@ -17,13 +17,11 @@ export default function Hero() {
           className="col-span-8 text-center sm:text-left"
         >
           <h1 className="mb-6 text-4xl font-extrabold sm:text-5xl lg:text-6xl bg-gradient-to-r from-blue-400 to-pink-600 text-transparent bg-clip-text">
-            Hello, I'm <br />
+            Hello, I&apos;m <br />
             <Animation />
           </h1>
           <p className="text-gray-400 my-6 sm:text-lg lg:text-xl">
-            Resolving design problems, building smart user interfaces and useful
-            interactions, developing rich web applications and seamless web
-            experiences.
+          I specialize in resolving design challenges, building intelligent user interfaces, and developing rich web applications for seamless digital experiences. My passion lies in crafting visually striking solutions and translating visions into captivating realities. With expertise in user-centric design and strategic development, I strive to exceed expectations and leave a lasting impact on the digital landscape.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-3 mb-6">
             <Link

@@ -11,11 +11,11 @@ interface ItemType {
       title: "Skills",
       details: [
         "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Sequelize",
-        "MongoDB",
-        "Mongoose",
+        "JavaScript",
+        "HTML",
+        "Next.js",
+        "Redux",
+        "tailwind",
       ],
     },
     {
