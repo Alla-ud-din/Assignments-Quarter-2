@@ -65,7 +65,7 @@ export default function Skills() {
           most popular open source CMS on the web - WordPress
         </p>
         <p className="pb-2 text-center">
-          Visit my <Link href={"/www.linkedin.com"}> Linkedin </Link> for more
+          Visit my <Link href={"https://linkedin.com"}> Linkedin </Link> for more
           details.
         </p>
       </div>
