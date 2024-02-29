@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 interface ItemType {
   id: number;
   title: string;
@@ -32,6 +32,12 @@ export default function Aboutmeitems() {
   const handleItemClick = (item: ItemType) => {
     setSelectedItem(item);
   };
+
+  useEffect(() => {
+    // Set the initial selected item to the "Skills" item
+    setSelectedItem(items[0]);
+  }, []); // Empty dependency array ensures the effect runs only once on mount
+
   return (
     <div className="container mx-auto mt-8">
       <div className="flex space-x-4">
@@ -41,8 +47,8 @@ export default function Aboutmeitems() {
             onClick={() => handleItemClick(item)}
             className={`cursor-pointer p-2 hover:text-white ${
               selectedItem && selectedItem.id === item.id
-                ? "text-white border-purple-500 border-b-4"
-                : "text-gray-400"
+                ? "text-white border-purple-500 border-b-4 ease-out duration-500"
+                : "text-gray-400 "
             }`}
           >
             {item.title}
