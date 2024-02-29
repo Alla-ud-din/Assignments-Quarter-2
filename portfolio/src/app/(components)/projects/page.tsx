@@ -60,8 +60,13 @@ export default function Project() {
   };
   return (
     <section>
-      <div className="">
-        <h2 className="text-center text-4xl font-bold text-white mt-20 mb-8 md:mb-12 min-h-screen">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="min-h-screen"
+      >
+        <h2 className="text-center text-4xl font-bold text-white mt-20 mb-8 md:mb-12 ">
           My Projects
         </h2>
         {/* <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
@@ -99,7 +104,7 @@ export default function Project() {
             </motion.li>
           ))}
         </ul>
-      </div>
+      </motion.div>
     </section>
   );
 }

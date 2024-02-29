@@ -1,20 +1,25 @@
-import React from "react";
-import Image from "next/image";
-import Footer from "@/components/footer";
+'use client'
 import Links from "./links";
+import { motion } from "framer-motion";
+
 
 export default function Contacts() {
   return (
     <section className="">
-      <div className="text-gray-600 body-font px-5 pt-24 min-h-screen mx-auto ">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="text-gray-600 body-font px-5 pt-24 min-h-screen mx-auto "
+      >
         <div className="flex flex-col text-center w-full">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
             Let&apos;s Connect
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-400">
             I&apos;m currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I&apos;ll try
-            my best to get back to you!
+            open. Whether you have a question or just want to say hi, I&apos;ll
+            try my best to get back to you!
           </p>
         </div>
         <div className="flex flex-wrap -m-2 justify-center lg:w-1/2 md:w-2/3 mx-auto">
@@ -89,7 +94,7 @@ export default function Contacts() {
             <Links />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
